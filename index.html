@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather & Movie App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<meta name="description" content="A Weather and Movie Search App built using HTML, CSS, JavaScript, and APIs.">
+<button id="darkBtn">🌙 Dark Mode</button>
+<body>
+  <h1>Weather App</h1>
+  <input id="city" type="text" placeholder="Enter city name">
+  <button id="weatherBtn">Search Weather</button>
+  <div id="weatherResult"></div>
+
+  <hr>
+
+  <h1>Movie Search App</h1>
+  <input id="movie" type="text" placeholder="Enter movie name">
+  <button id="movieBtn">Search Movie</button>
+  <buton id="clearBtn">Clear</buton>
+  <div id="movieResult"></div>
+  <h2>🕘 Recent Movie Searches</h2>
+<ul id="movieHistory"></ul>
+  <hr>
+
+<h1>🍿 Popular Movies</h1>
+
+<div class="popular-movies">
+
+    <a class="movie-card" href="https://www.imdb.com/title/tt15398776/" target="_blank">
+        <img src="https://image.tmdb.org/t/p/w300/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg" alt="Oppenheimer">
+        <h3>Oppenheimer</h3>
+        <p>2023 | Drama</p>
+    </a>
+
+    <a class="movie-card" href="https://www.imdb.com/title/tt1517268/" target="_blank">
+        <img src="https://image.tmdb.org/t/p/w300/kCGlIMHnOm8JPXq3rXM6c5wMxcT.jpg" alt="Barbie">
+        <h3>Barbie</h3>
+        <p>2023 | Comedy</p>
+    </a>
+
+    <a class="movie-card" href="https://www.imdb.com/title/tt6263850/" target="_blank">
+        <img src="https://image.tmdb.org/t/p/w300/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg" alt="Deadpool and Wolverine">
+        <h3>Deadpool &amp; Wolverine</h3>
+        <p>2024 | Action</p>
+    </a>
+
+</div>
+  <script src="script.js"></script>
+
+  <footer class="app-footer">
+    <p>🌦️ Weather & Movie Search App</p>
+    <p>Built using HTML, CSS, JavaScript and APIs</p>
+    <p>© 2026 My Project</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    padding: 30px 15px;
+    color: #222;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    margin: 20px 0;
+    font-size: 32px;
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+input {
+    width: 230px;
+    max-width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 13px 20px;
+    background: #222b5c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff6584;
+    transform: scale(1.05);
+}
+
+#weatherResult,
+#movieResult {
+    background: white;
+    max-width: 500px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px #2222;
+    overflow-wrap: anywhere;
+}
+
+#movieResult img {
+    width: 180px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 15px auto;
+    display: block;
+    box-shadow: 0 5px 15px #0003;
+}
+
+p {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+hr {
+    max-width: 600px;
+    margin: 30px auto;
+    border: 0;
+    border-top: 1px solid #ffffff88;
+}
+
+/* Popular movies layout */
+.popular-movies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 200px));
+    justify-content: center;
+    align-items: start;
+    gap: 25px;
+    max-width: 1000px;
+    margin: 25px auto;
+}
+
+.popular-movies .movie-card {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    padding: 15px;
+    background: white;
+    color: #222;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px #2222;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.popular-movies .movie-card:hover {
+    transform: translateY(-6px);
+}
+
+.popular-movies .movie-card img {
+    display: block;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    margin: 0 auto 12px;
+    border-radius: 10px;
+}
+
+.popular-movies .movie-card h3 {
+    margin: 10px 0;
+    overflow-wrap: anywhere;
+}
+
+.popular-movies .movie-card p {
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: white;
+}
+
+body.dark-mode #weatherResult,
+body.dark-mode #movieResult,
+body.dark-mode .popular-movies .movie-card {
+    background: #222;
+    color: white;
+}
+
+body.dark-mode .popular-movies .movie-card p {
+    color: #ddd;
+}
+
+/* Date and time */
+#dateTime {
+    color: white;
+    font-size: 18px;
+    margin: 20px auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Mobile-friendly design */
+@media (max-width: 600px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    input,
+    button {
+        max-width: 100%;
+    }
+
+    .popular-movies {
+        grid-template-columns: repeat(2, minmax(0, 160px));
+        gap: 15px;
+    }
+
+    .popular-movies .movie-card img {
+        height: 210px;
+    }
+}
+.app-footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background: #222b5c;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.app-footer p {
+    margin: 8px 0;
+}
